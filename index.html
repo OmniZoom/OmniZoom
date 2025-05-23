@@ -44,6 +44,9 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 
@@ -152,7 +155,7 @@
           <figure class="my-figure">
             <img src="static/images/overview.png" alt="Overview of OmniZoom" />
             <figcaption class="subtitle">
-              (a) Plug-and-play integration
+              Figure 1: Plug-and-play integration
             </figcaption>
           </figure>
 
@@ -196,13 +199,60 @@
             demonstrating its robustness in complex domain shift scenarios.
           </p>
         </div>
+        
+        <!-- Image -->
+        <section class="hero is-small">
+          <div class="hero-body">
+            <div class="container is-max-desktop">
+              <div class="columns is-centered has-text-centered">
+                <div class="column is-full"> <!-- 与 Results 匹配 -->
 
-        <figure class="my-figure">
-          <img src="static/images/result_comparison.png" alt="Comparison Results" />
-          <figcaption class="subtitle">
-            Qualitative comparison across various zoom-in conditions. Our method preserves more details and better color consistency.
-          </figcaption>
-        </figure>
+                  <!-- 统一宽度的包裹层 -->
+                  <figure class="my-figure">
+                    <img src="static/images/fig2.jpg" alt="Results" />
+                    <figcaption class="subtitle">
+                      Figure 2: Visual comparison of 2D and 3D-TPR FI results across networks. Each row shows interpolation results at the same timestep.
+                    </figcaption>
+                  </figure>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End image -->
+
+
+                <!-- Image -->
+        <section class="hero is-small">
+          <div class="hero-body">
+            <div class="container is-max-desktop">
+              <div class="columns is-centered has-text-centered">
+                <div class="column is-full"> <!-- 与 Results 匹配 -->
+
+                  <!-- 统一宽度的包裹层 -->
+                  <figure class="my-figure">
+                    <img src="static/images/fig3.jpg" alt="Results" />
+                    <figcaption class="subtitle">
+                      Figure 3: Qualitative results on real-world data across four FI networks at timestep \(t=1/2\). The subscript \(_f\) denotes models finetuned on our ZI dataset.
+                    </figcaption>
+                  </figure>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="content has-text-justified" style="margin-top: 1rem;">
+          <p>
+            These results demonstrate the advantages of our 3D-TPR interpolation approach,
+            especially under temporal uncertainty. Notably, the fine-tuned models yield significantly
+            improved sharpness and color consistency.
+          </p>
+        </div>
+        <!-- End image -->
+
 
       </div>
     </div>
